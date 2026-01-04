@@ -1,0 +1,694 @@
+<!DOCTYPE html>
+<html lang="th">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ดาวเคราะห์ - Planets</title>
+    <link rel="stylesheet" href="styles.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600;700&family=Prompt:wght@300;400;500;600&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <!-- Stars Background -->
+    <div class="stars-background" id="stars"></div>
+
+    <!-- Shooting Stars -->
+    <div class="particles-container" id="particles"></div>
+
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <span class="logo-icon">🌌</span>
+                <span class="logo-text neon-text">Space</span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="index.html">หน้าแรก</a></li>
+                <li><a href="about.html">เกี่ยวกับ</a></li>
+                <li><a href="types.html" class="active">ดาวเคราะห์</a></li>
+                <li><a href="recipes.html">ข้อมูล</a></li>
+                <li><a href="benefits.html">ความน่าสนใจ</a></li>
+                <li><a href="student.html">นักเรียน</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <section class="page-header">
+        <div class="container">
+            <h1 class="neon-text floating">ดาวเคราะห์ทั้ง 8 ดวง</h1>
+            <p class="page-subtitle typewriter-text">สำรวจดาวเคราะห์แต่ละดวงในระบบสุริยะ</p>
+        </div>
+    </section>
+
+    <section class="types-section">
+        <div class="container">
+            <h2 class="section-title rainbow-text">ดาวเคราะห์หิน</h2>
+            <div class="types-grid">
+                <!-- ดาวพุธ -->
+                <div class="type-card glow-border card-3d">
+                    <div class="hover-zoom">
+                        <img src="5e5624f9b0d8420cab671967_800x0xcover_iKSuVhpS.jpg" alt="Mercury Planet">
+                    </div>
+                    <div class="type-content">
+                        <h3 class="neon-text">ดาวพุธ (Mercury)</h3>
+                        <p class="type-badge pulse-btn">ดาวเคราะห์ที่เล็กที่สุด</p>
+                        <p>ดาวพุธเป็นดาวเคราะห์ที่เล็กที่สุดและอยู่ใกล้ดวงอาทิตย์ที่สุด
+                            มีพื้นผิวที่มีหลุมอุกกาบาตมากมายเหมือนดวงจันทร์</p>
+                        <ul class="type-features">
+                            <li>✓ ระยะทางจากดวงอาทิตย์: 57.9 ล้านกม.</li>
+                            <li>✓ เส้นผ่านศูนย์กลาง: 4,880 กม.</li>
+                            <li>✓ จำนวนดาวบริวาร: 0</li>
+                            <li>✓ อุณหภูมิ: -180°C ถึง 430°C</li>
+                            <li>✓ วันหนึ่งบนดาวพุธยาวนาน: 176 วันโลก</li>
+                        </ul>
+                    </div>
+                    <p class="image-citation">Photo: Mercury surface by NASA</p>
+                </div>
+
+                <!-- ดาวศุกร์ -->
+                <div class="type-card glow-border card-3d">
+                    <div class="hover-zoom">
+                        <img src="PIA23791-Venus-RealAndEnhancedContrastViews-20200608_(cropped).jpg"
+                            alt="Venus Planet">
+                    </div>
+                    <div class="type-content">
+                        <h3 class="neon-text">ดาวศุกร์ (Venus)</h3>
+                        <p class="type-badge pulse-btn">ดาวเคราะห์ที่ร้อนที่สุด</p>
+                        <p>ดาวศุกร์มีบรรยากาศหนาแน่นที่สุด ประกอบด้วยก๊าซคาร์บอนไดออกไซด์ 96%
+                            ทำให้เกิดปรากฏการณ์เรือนกระจกรุนแรง</p>
+                        <ul class="type-features">
+                            <li>✓ ระยะทางจากดวงอาทิตย์: 108.2 ล้านกม.</li>
+                            <li>✓ เส้นผ่านศูนย์กลาง: 12,104 กม.</li>
+                            <li>✓ จำนวนดาวบริวาร: 0</li>
+                            <li>✓ อุณหภูมิพื้นผิว: 462°C</li>
+                            <li>✓ หมุนรอบตัวเองช้าที่สุด: 243 วัน</li>
+                        </ul>
+                    </div>
+                    <p class="image-citation">Photo: Venus with clouds by NASA</p>
+                </div>
+
+                <!-- โลก -->
+                <div class="type-card glow-border card-3d">
+                    <div class="hover-zoom">
+                        <img src="The_Blue_Marble,_AS17-148-22727.jpg.webp" alt="Earth Planet">
+                    </div>
+                    <div class="type-content">
+                        <h3 class="neon-text">โลก (Earth)</h3>
+                        <p class="type-badge pulse-btn">ดาวเคราะห์ที่มีชีวิต</p>
+                        <p>โลกเป็นดาวเคราะห์เดียวที่มีสภาพแวดล้อมเหมาะสมสำหรับชีวิต มีน้ำในสถานะของเหลว
+                            บรรยากาศที่มีออกซิเจน และสนามแม่เหล็กป้องกัน</p>
+                        <ul class="type-features">
+                            <li>✓ ระยะทางจากดวงอาทิตย์: 149.6 ล้านกม.</li>
+                            <li>✓ เส้นผ่านศูนย์กลาง: 12,742 กม.</li>
+                            <li>✓ จำนวนดาวบริวาร: 1 (ดวงจันทร์)</li>
+                            <li>✓ อุณหภูมิเฉลี่ย: 15°C</li>
+                            <li>✓ ความเอียงของแกน: 23.5 องศา</li>
+                        </ul>
+                    </div>
+                    <p class="image-citation">Photo: Earth from space by NASA</p>
+                </div>
+
+                <!-- ดาวอังคาร -->
+                <div class="type-card glow-border card-3d">
+                    <div class="hover-zoom">
+                        <img src="Mars_-_August_30_2021_-_Flickr_-_Kevin_M._Gill.png" alt="Mars Planet">
+                    </div>
+                    <div class="type-content">
+                        <h3 class="neon-text">ดาวอังคาร (Mars)</h3>
+                        <p class="type-badge pulse-btn">ดาวเคราะห์แดง</p>
+                        <p>ดาวอังคารมีสีแดงเนื่องจากออกไซด์เหล็ก (สนิม) บนพื้นผิว มีภูเขาไฟที่สูงที่สุดในระบบสุริยะ
+                            (โอลิมปัส มอนส์)</p>
+                        <ul class="type-features">
+                            <li>✓ ระยะทางจากดวงอาทิตย์: 227.9 ล้านกม.</li>
+                            <li>✓ เส้นผ่านศูนย์กลาง: 6,779 กม.</li>
+                            <li>✓ จำนวนดาวบริวาร: 2 (โฟบอสและดีมอส)</li>
+                            <li>✓ อุณหภูมิ: -125°C ถึง 20°C</li>
+                            <li>✓ วันหนึ่งบนดาวอังคาร: 24.6 ชั่วโมง</li>
+                        </ul>
+                    </div>
+                    <p class="image-citation">Photo: Mars surface by NASA</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="types-section">
+        <div class="container">
+            <h2 class="section-title rainbow-text">ดาวเคราะห์ยักษ์ก๊าซ</h2>
+            <div class="types-grid">
+                <!-- ดาวพฤหัสบดี -->
+                <div class="type-card glow-border card-3d">
+                    <div class="hover-zoom">
+                        <img src="Jupiter_OPAL_2024.png.webp" alt="Jupiter Planet">
+                    </div>
+                    <div class="type-content">
+                        <h3 class="neon-text">ดาวพฤหัสบดี (Jupiter)</h3>
+                        <p class="type-badge pulse-btn">ดาวเคราะห์ที่ใหญ่ที่สุด</p>
+                        <p>ดาวพฤหัสบดีเป็นดาวเคราะห์ที่ใหญ่ที่สุด
+                            มีจุดแดงยักษ์ซึ่งเป็นพายุไซโคลนขนาดใหญ่ที่มีอายุนับหลายศตวรรษ</p>
+                        <ul class="type-features">
+                            <li>✓ ระยะทางจากดวงอาทิตย์: 778.5 ล้านกม.</li>
+                            <li>✓ เส้นผ่านศูนย์กลาง: 139,820 กม.</li>
+                            <li>✓ จำนวนดาวบริวาร: 95+</li>
+                            <li>✓ อุณหภูมิชั้นเมฆ: -145°C</li>
+                            <li>✓ จุดแดงยักษ์: พายุใหญ่กว่าโลก 1.3 เท่า</li>
+                        </ul>
+                    </div>
+                    <p class="image-citation">Photo: Jupiter with Great Red Spot by NASA</p>
+                </div>
+
+                <!-- ดาวเสาร์ -->
+                <div class="type-card glow-border card-3d">
+                    <div class="hover-zoom">
+                        <img src="Saturn_during_Equinox.jpg" alt="Saturn Planet">
+                    </div>
+                    <div class="type-content">
+                        <h3 class="neon-text">ดาวเสาร์ (Saturn)</h3>
+                        <p class="type-badge pulse-btn">ดาวเคราะห์ที่มีวงแหวน</p>
+                        <p>ดาวเสาร์มีวงแหวนที่สวยงามและโดดเด่นที่สุด ประกอบด้วยน้ำแข็งและหิน มีความหนาเพียง 10 เมตร
+                            แต่กว้างถึง 282,000 กม.</p>
+                        <ul class="type-features">
+                            <li>✓ ระยะทางจากดวงอาทิตย์: 1,434 ล้านกม.</li>
+                            <li>✓ เส้นผ่านศูนย์กลาง: 116,460 กม.</li>
+                            <li>✓ จำนวนดาวบริวาร: 146+</li>
+                            <li>✓ อุณหภูมิชั้นเมฆ: -178°C</li>
+                            <li>✓ ความหนาแน่น: น้อยกว่าน้ำ (ลอยน้ำได้)</li>
+                        </ul>
+                    </div>
+                    <p class="image-citation">Photo: Saturn with rings by NASA</p>
+                </div>
+
+                <!-- ดาวยูเรนัส -->
+                <div class="type-card glow-border card-3d">
+                    <div class="hover-zoom">
+                        <img src="Uranus_Voyager2_color_calibrated.png" alt="Uranus Planet">
+                    </div>
+                    <div class="type-content">
+                        <h3 class="neon-text">ดาวยูเรนัส (Uranus)</h3>
+                        <p class="type-badge pulse-btn">ดาวเคราะห์น้ำแข็ง</p>
+                        <p>ดาวยูเรนัสหมุนไปด้านข้าง ทำให้มีฤดูกาลที่รุนแรง มีสีฟ้า-เขียวจากมีเทนในบรรยากาศ
+                            และมีวงแหวนแนวตั้ง</p>
+                        <ul class="type-features">
+                            <li>✓ ระยะทางจากดวงอาทิตย์: 2,871 ล้านกม.</li>
+                            <li>✓ เส้นผ่านศูนย์กลาง: 50,724 กม.</li>
+                            <li>✓ จำนวนดาวบริวาร: 28</li>
+                            <li>✓ อุณหภูมิต่ำสุด: -224°C</li>
+                            <li>✓ ความเอียงของแกน: 98 องศา (หมุนตะแคง)</li>
+                        </ul>
+                    </div>
+                    <p class="image-citation">Photo: Uranus with vertical rings by NASA</p>
+                </div>
+
+                <!-- ดาวเนปจูน -->
+                <div class="type-card glow-border card-3d">
+                    <div class="hover-zoom">
+                        <img src="PezBzd9Fehsq9XWgWMauVV.jpg" alt="Neptune Planet">
+                    </div>
+                    <div class="type-content">
+                        <h3 class="neon-text">ดาวเนปจูน (Neptune)</h3>
+                        <p class="type-badge pulse-btn">ดาวเคราะห์ที่ไกลที่สุด</p>
+                        <p>ดาวเนปจูนเป็นดาวเคราะห์ที่ไกลที่สุดและมีลมแรงที่สุดในระบบสุริยะ (ความเร็วลมสูงสุด 2,100
+                            กม./ชม.)</p>
+                        <ul class="type-features">
+                            <li>✓ ระยะทางจากดวงอาทิตย์: 4,495 ล้านกม.</li>
+                            <li>✓ เส้นผ่านศูนย์กลาง: 49,244 กม.</li>
+                            <li>✓ จำนวนดาวบริวาร: 16</li>
+                            <li>✓ อุณหภูมิต่ำสุด: -214°C</li>
+                            <li>✓ จุดมืดใหญ่: พายุขนาดใหญ่คล้ายจุดแดงยักษ์</li>
+                        </ul>
+                    </div>
+                    <p class="image-citation">Photo: Neptune with Great Dark Spot by NASA</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- แบบทางเลือก: ใช้ภาพดาวเคราะห์จริงจาก NASA -->
+    <div style="display: none;">
+        <!-- รูปดาวเคราะห์จริงจาก NASA (ซ่อนไว้เป็นทางเลือก) -->
+        <link rel="preload"
+            href="https://solarsystem.nasa.gov/system/resources/detail_files/2486_stsci-h-p1936f_1200.jpg" as="image">
+        <!-- Mercury -->
+        <link rel="preload"
+            href="https://solarsystem.nasa.gov/system/resources/detail_files/2490_stsci-h-p1936f_1200.jpg" as="image">
+        <!-- Venus -->
+        <link rel="preload"
+            href="https://solarsystem.nasa.gov/system/resources/detail_files/2485_stsci-h-p1936f_1200.jpg" as="image">
+        <!-- Earth -->
+        <link rel="preload"
+            href="https://solarsystem.nasa.gov/system/resources/detail_files/2488_stsci-h-p1936f_1200.jpg" as="image">
+        <!-- Mars -->
+        <link rel="preload"
+            href="https://solarsystem.nasa.gov/system/resources/detail_files/2486_stsci-h-p1936f_1200.jpg" as="image">
+        <!-- Jupiter -->
+        <link rel="preload"
+            href="https://solarsystem.nasa.gov/system/resources/detail_files/2491_stsci-h-p1936f_1200.jpg" as="image">
+        <!-- Saturn -->
+        <link rel="preload"
+            href="https://solarsystem.nasa.gov/system/resources/detail_files/2489_stsci-h-p1936f_1200.jpg" as="image">
+        <!-- Uranus -->
+        <link rel="preload"
+            href="https://solarsystem.nasa.gov/system/resources/detail_files/2487_stsci-h-p1936f_1200.jpg" as="image">
+        <!-- Neptune -->
+    </div>
+
+    <!-- Script สำหรับเปลี่ยนภาพให้ถูกต้อง -->
+    <script>
+        // ฟังก์ชันสำหรับเปลี่ยนภาพดาวเคราะห์ให้ถูกต้อง
+        function updatePlanetImages() {
+            const planetImages = [
+                {
+                    id: 'mercury',
+                    url: 'https://solarsystem.nasa.gov/system/resources/detail_files/2490_stsci-h-p1936f_1200.jpg',
+                    alt: 'Mercury from MESSENGER spacecraft'
+                },
+                {
+                    id: 'venus',
+                    url: 'https://solarsystem.nasa.gov/system/resources/detail_files/2485_stsci-h-p1936f_1200.jpg',
+                    alt: 'Venus from Magellan spacecraft'
+                },
+                {
+                    id: 'earth',
+                    url: 'https://solarsystem.nasa.gov/system/resources/detail_files/2488_stsci-h-p1936f_1200.jpg',
+                    alt: 'Earth from space (Blue Marble)'
+                },
+                {
+                    id: 'mars',
+                    url: 'https://solarsystem.nasa.gov/system/resources/detail_files/2486_stsci-h-p1936f_1200.jpg',
+                    alt: 'Mars from Mars Reconnaissance Orbiter'
+                },
+                {
+                    id: 'jupiter',
+                    url: 'https://solarsystem.nasa.gov/system/resources/detail_files/2491_stsci-h-p1936f_1200.jpg',
+                    alt: 'Jupiter from Juno spacecraft'
+                },
+                {
+                    id: 'saturn',
+                    url: 'https://solarsystem.nasa.gov/system/resources/detail_files/2489_stsci-h-p1936f_1200.jpg',
+                    alt: 'Saturn from Cassini spacecraft'
+                },
+                {
+                    id: 'uranus',
+                    url: 'https://solarsystem.nasa.gov/system/resources/detail_files/2487_stsci-h-p1936f_1200.jpg',
+                    alt: 'Uranus from Voyager 2'
+                },
+                {
+                    id: 'neptune',
+                    url: 'https://solarsystem.nasa.gov/system/resources/detail_files/2484_stsci-h-p1936f_1200.jpg',
+                    alt: 'Neptune from Voyager 2'
+                }
+            ];
+
+            // เปลี่ยนการอ้างอิงภาพ
+            const cards = document.querySelectorAll('.type-card');
+            cards.forEach((card, index) => {
+                if (index < planetImages.length) {
+                    const img = card.querySelector('img');
+                    const planet = planetImages[index];
+
+                    // สร้างภาพใหม่
+                    const newImg = new Image();
+                    newImg.src = planet.url;
+                    newImg.alt = planet.alt;
+                    newImg.style.filter = 'none'; // ลบ filter เดิม
+
+                    newImg.onload = function () {
+                        // แทนที่ภาพเดิม
+                        img.parentNode.replaceChild(newImg, img);
+
+                        // อัปเดตคำบรรยายภาพ
+                        const citation = card.querySelector('.image-citation');
+                        if (citation) {
+                            citation.innerHTML = `Photo: ${planet.alt} by NASA`;
+                        }
+                    };
+
+                    // ถ้าโหลดไม่สำเร็จให้ใช้ภาพสำรอง
+                    newImg.onerror = function () {
+                        console.log(`ไม่สามารถโหลดภาพของ ${planet.id}`);
+                    };
+                }
+            });
+        }
+
+        // โหลดภาพเมื่อหน้าเว็บโหลดเสร็จ
+        document.addEventListener('DOMContentLoaded', function () {
+            // รอสักครู่ให้หน้าเว็บโหลดเสร็จก่อน
+            updatePlanetImages()
+
+            // หรือใช้ภาพสำรองจาก Unsplash ที่ปรับแต่งแล้ว
+            const fallbackImages = {
+                mercury: 'https://images.unsplash.com/photo-1614730321146-b6fa6a46bcb4?w=400&h=300&fit=crop',
+                venus: 'https://images.unsplash.com/photo-1614730321146-b6fa6a46bcb4?w=400&h=300&fit=crop&crop=top',
+                earth: 'https://images.unsplash.com/photo-1446776653964-20c1d3a81b06?w=400&h=300&fit=crop',
+                mars: 'https://images.unsplash.com/photo-1614730321146-b6fa6a46bcb4?w=400&h=300&fit=crop&crop=entropy',
+                jupiter: 'https://images.unsplash.com/photo-1614730321146-b6fa6a46bcb4?w=400&h=300&fit=crop&crop=center',
+                saturn: 'https://images.unsplash.com/photo-1614730321146-b6fa6a46bcb4?w=400&h=300&fit=crop&crop=top',
+                uranus: 'https://images.unsplash.com/photo-1614730321146-b6fa6a46bcb4?w=400&h=300&fit=crop&crop=entropy',
+                neptune: 'https://images.unsplash.com/photo-1614730321146-b6fa6a46bcb4?w=400&h=300&fit=crop&crop=focalpoint'
+            };
+        });
+    </script>
+
+    <section class="comparison-section">
+        <div class="container">
+            <h2 class="section-title neon-text">เปรียบเทียบดาวเคราะห์</h2>
+            <div class="comparison-table glow-border">
+                <table>
+                    <thead>
+                        <tr>
+                            <th class="rainbow-text">ดาวเคราะห์</th>
+                            <th class="rainbow-text">ประเภท</th>
+                            <th class="rainbow-text">ขนาด</th>
+                            <th class="rainbow-text">อุณหภูมิ</th>
+                            <th class="rainbow-text">ดาวบริวาร</th>
+                            <th class="rainbow-text">สีเด่น</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="shimmer-effect">
+                            <td>ดาวพุธ</td>
+                            <td>หิน</td>
+                            <td>เล็ก</td>
+                            <td>ร้อน/เย็นสุดขั้ว</td>
+                            <td>0</td>
+                            <td>เทาอ่อน</td>
+                        </tr>
+                        <tr class="shimmer-effect">
+                            <td>ดาวศุกร์</td>
+                            <td>หิน</td>
+                            <td>กลาง</td>
+                            <td>ร้อนที่สุด</td>
+                            <td>0</td>
+                            <td>ขาวเหลือง</td>
+                        </tr>
+                        <tr class="shimmer-effect">
+                            <td>โลก</td>
+                            <td>หิน</td>
+                            <td>กลาง</td>
+                            <td>ปานกลาง</td>
+                            <td>1</td>
+                            <td>ฟ้า-น้ำตาล-เขียว</td>
+                        </tr>
+                        <tr class="shimmer-effect">
+                            <td>ดาวอังคาร</td>
+                            <td>หิน</td>
+                            <td>เล็ก</td>
+                            <td>เย็น</td>
+                            <td>2</td>
+                            <td>แดงสนิม</td>
+                        </tr>
+                        <tr class="shimmer-effect">
+                            <td>ดาวพฤหัสบดี</td>
+                            <td>ก๊าซ</td>
+                            <td>ใหญ่มาก</td>
+                            <td>เย็นมาก</td>
+                            <td>95+</td>
+                            <td>ส้ม-ขาว</td>
+                        </tr>
+                        <tr class="shimmer-effect">
+                            <td>ดาวเสาร์</td>
+                            <td>ก๊าซ</td>
+                            <td>ใหญ่</td>
+                            <td>เย็นมาก</td>
+                            <td>146+</td>
+                            <td>ทอง-น้ำตาล</td>
+                        </tr>
+                        <tr class="shimmer-effect">
+                            <td>ดาวยูเรนัส</td>
+                            <td>น้ำแข็ง</td>
+                            <td>กลาง</td>
+                            <td>เย็นสุดขั้ว</td>
+                            <td>28</td>
+                            <td>ฟ้าอมเขียว</td>
+                        </tr>
+                        <tr class="shimmer-effect">
+                            <td>ดาวเนปจูน</td>
+                            <td>น้ำแข็ง</td>
+                            <td>กลาง</td>
+                            <td>เย็นสุดขั้ว</td>
+                            <td>16</td>
+                            <td>น้ำเงินเข้ม</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+
+    <!-- Aurora Effect -->
+    <div class="aurora" style="position: fixed; top: 0; z-index: -1;"></div>
+    <div class="aurora" style="position: fixed; bottom: 0; transform: rotate(180deg); z-index: -1;"></div>
+
+    <!-- Planet Orbits Visualization -->
+    <div class="orbit"
+        style="position: fixed; top: 30%; left: 50%; width: 100px; height: 100px; border: 1px dashed rgba(255, 200, 100, 0.3); border-radius: 50%; z-index: -1;">
+    </div>
+    <div class="orbit"
+        style="position: fixed; top: 30%; left: 50%; width: 150px; height: 150px; border: 1px dashed rgba(255, 150, 50, 0.3); border-radius: 50%; z-index: -1; animation-delay: 2s;">
+    </div>
+    <div class="orbit"
+        style="position: fixed; top: 30%; left: 50%; width: 200px; height: 200px; border: 1px dashed rgba(100, 200, 255, 0.3); border-radius: 50%; z-index: -1; animation-delay: 4s;">
+    </div>
+    <div class="orbit"
+        style="position: fixed; top: 30%; left: 50%; width: 250px; height: 250px; border: 1px dashed rgba(255, 100, 100, 0.3); border-radius: 50%; z-index: -1; animation-delay: 6s;">
+    </div>
+
+    <!-- ลบส่วน Planet Color Indicators ออกทั้งหมด -->
+
+    <style>
+        /* ลบสไตล์สำหรับ planet-color-indicators */
+        /* .planet-color-indicators และ .color-dot ถูกลบออกแล้ว */
+
+        /* เพิ่ม CSS สำหรับภาพดาวเคราะห์ */
+        .planet-img {
+            width: 100%;
+            height: 250px;
+            object-fit: cover;
+            object-position: center;
+            transition: transform 0.5s ease;
+        }
+
+        .type-card:hover .planet-img {
+            transform: scale(1.05);
+        }
+
+        /* เอฟเฟคพิเศษสำหรับแต่ละดาวเคราะห์ */
+        .mercury-effect {
+            background: linear-gradient(135deg, rgba(168, 168, 168, 0.1), transparent);
+        }
+
+        .venus-effect {
+            background: linear-gradient(135deg, rgba(255, 250, 205, 0.1), transparent);
+        }
+
+        .earth-effect {
+            background: linear-gradient(135deg, rgba(30, 144, 255, 0.1), transparent);
+        }
+
+        .mars-effect {
+            background: linear-gradient(135deg, rgba(255, 69, 0, 0.1), transparent);
+        }
+
+        .jupiter-effect {
+            background: linear-gradient(135deg, rgba(255, 165, 0, 0.1), transparent);
+        }
+
+        .saturn-effect {
+            background: linear-gradient(135deg, rgba(218, 165, 32, 0.1), transparent);
+        }
+
+        .uranus-effect {
+            background: linear-gradient(135deg, rgba(127, 255, 212, 0.1), transparent);
+        }
+
+        .neptune-effect {
+            background: linear-gradient(135deg, rgba(0, 0, 255, 0.1), transparent);
+        }
+    </style>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4 class="neon-text">ระบบสุริยะ</h4>
+                    <p>เฉลิมฉลองความมหัศจรรย์ของระบบสุริยะและดาวเคราะห์ทั้ง 8 ดวง</p>
+                </div>
+                <div class="footer-section">
+                    <h4 class="neon-text">ลิงก์ด่วน</h4>
+                    <ul>
+                        <li><a href="index.html">หน้าแรก</a></li>
+                        <li><a href="about.html">เกี่ยวกับ</a></li>
+                        <li><a href="types.html">ดาวเคราะห์</a></li>
+                        <li><a href="recipes.html">ข้อมูล</a></li>
+                        <li><a href="benefits.html">ความน่าสนใจ</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4 class="neon-text">ติดต่อ</h4>
+                    <p>-</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 เว็บไซต์ระบบสุริยะ.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script>
+        // Initialize effects for planets page
+        document.addEventListener('DOMContentLoaded', () => {
+            // Create stars
+            const starsContainer = document.getElementById('stars');
+            const starCount = 200;
+
+            for (let i = 0; i < starCount; i++) {
+                const star = document.createElement('div');
+                const size = Math.random() * 3;
+                const speed = 1 + Math.random() * 2;
+
+                star.classList.add('star');
+                if (size < 1) star.classList.add('small');
+                else if (size < 2) star.classList.add('medium');
+                else star.classList.add('large');
+
+                star.style.width = `${size}px`;
+                star.style.height = `${size}px`;
+                star.style.left = `${Math.random() * 100}vw`;
+                star.style.top = `${Math.random() * 100}vh`;
+                star.style.animationDuration = `${speed}s`;
+
+                starsContainer.appendChild(star);
+            }
+
+            // Add planet-specific effects to cards
+            const planetClasses = ['mercury-effect', 'venus-effect', 'earth-effect', 'mars-effect',
+                'jupiter-effect', 'saturn-effect', 'uranus-effect', 'neptune-effect'];
+
+            const cards = document.querySelectorAll('.type-card');
+            cards.forEach((card, index) => {
+                if (index < planetClasses.length) {
+                    card.classList.add(planetClasses[index]);
+                }
+
+                // Add click effect to show planet info
+                card.addEventListener('click', function () {
+                    const planetName = this.querySelector('h3').textContent;
+                    const planetInfo = this.querySelector('p').textContent;
+
+                    // Create popup
+                    const popup = document.createElement('div');
+                    popup.style.position = 'fixed';
+                    popup.style.top = '50%';
+                    popup.style.left = '50%';
+                    popup.style.transform = 'translate(-50%, -50%)';
+                    popup.style.background = 'rgba(13, 27, 42, 0.95)';
+                    popup.style.padding = '2rem';
+                    popup.style.borderRadius = '15px';
+                    popup.style.border = '2px solid var(--primary-color)';
+                    popup.style.boxShadow = 'var(--shadow-xl)';
+                    popup.style.zIndex = '1000';
+                    popup.style.maxWidth = '500px';
+                    popup.style.width = '90%';
+
+                    popup.innerHTML = `
+                        <h3 class="neon-text">${planetName}</h3>
+                        <p>${planetInfo}</p>
+                        <button class="btn btn-primary" style="margin-top: 1rem;">ปิด</button>
+                    `;
+
+                    document.body.appendChild(popup);
+
+                    // Close popup
+                    popup.querySelector('button').addEventListener('click', () => {
+                        popup.remove();
+                    });
+                });
+            });
+
+            // Create interactive planet info
+            const planetData = [
+                {
+                    name: "ดาวพุธ",
+                    fact: "ดาวพุธมีวันหนึ่งยาวนานถึง 176 วันโลก แต่ปีหนึ่งสั้นเพียง 88 วันโลก",
+                    color: "#a8a8a8"
+                },
+                {
+                    name: "ดาวศุกร์",
+                    fact: "ดาวศุกร์หมุนช้าที่สุดและหมุนทวนเข็มนาฬิกา (หมุนย้อนกลับ)",
+                    color: "#fffacd"
+                },
+                {
+                    name: "โลก",
+                    fact: "โลกเป็นดาวเคราะห์เดียวที่มีแผ่นเปลือกโลกเคลื่อนที่ (ทฤษฎีแผ่นเปลือกโลก)",
+                    color: "#1e90ff"
+                },
+                {
+                    name: "ดาวอังคาร",
+                    fact: "ดาวอังคารมีภูเขาไฟที่สูงที่สุดในระบบสุริยะ (โอลิมปัส มอนส์)",
+                    color: "#ff4500"
+                },
+                {
+                    name: "ดาวพฤหัสบดี",
+                    fact: "ดาวพฤหัสบดีมีมวลมากกว่าดาวเคราะห์อื่นรวมกัน 2.5 เท่า",
+                    color: "#ffa500"
+                },
+                {
+                    name: "ดาวเสาร์",
+                    fact: "ดาวเสาร์มีความหนาแน่นน้อยกว่าน้ำ (จะลอยน้ำได้ถ้ามีอ่างน้ำใหญ่พอ)",
+                    color: "#daa520"
+                },
+                {
+                    name: "ดาวยูเรนัส",
+                    fact: "ดาวยูเรนัสหมุนตะแคง ทำให้มีฤดูกาลที่รุนแรงนาน 21 ปี",
+                    color: "#7fffd4"
+                },
+                {
+                    name: "ดาวเนปจูน",
+                    fact: "ดาวเนปจูนมีลมพัดเร็วที่สุดในระบบสุริยะ (2,100 กม./ชม.)",
+                    color: "#0000ff"
+                }
+            ];
+
+            // Add fact to each card
+            cards.forEach((card, index) => {
+                if (index < planetData.length) {
+                    const factElement = document.createElement('p');
+                    factElement.textContent = planetData[index].fact;
+                    factElement.style.fontSize = '0.9rem';
+                    factElement.style.color = planetData[index].color;
+                    factElement.style.marginTop = '0.5rem';
+                    factElement.style.fontStyle = 'italic';
+
+                    card.querySelector('.type-content').appendChild(factElement);
+                }
+            });
+
+            // Table row animation
+            const tableRows = document.querySelectorAll('tbody tr');
+            tableRows.forEach((row, index) => {
+                row.style.animationDelay = `${index * 0.1}s`;
+
+                // Add hover effect
+                row.addEventListener('mouseenter', () => {
+                    row.style.transform = 'scale(1.02)';
+                    row.style.transition = 'transform 0.3s';
+                });
+
+                row.addEventListener('mouseleave', () => {
+                    row.style.transform = 'scale(1)';
+                });
+            });
+        });
+    </script>
+</body>
+
+</html>

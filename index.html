@@ -1,0 +1,500 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ระบบสุริยะ - Solar System</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600;700&family=Prompt:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Stars Background -->
+    <div class="stars-background" id="stars"></div>
+    
+    <!-- Shooting Stars -->
+    <div class="particles-container" id="particles"></div>
+
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <span class="logo-icon">🌌</span>
+                <span class="logo-text neon-text">Space</span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="index.html" class="active">หน้าแรก</a></li>
+                <li><a href="about.html">เกี่ยวกับ</a></li>
+                <li><a href="types.html">ดาวเคราะห์</a></li>
+                <li><a href="recipes.html">ข้อมูล</a></li>
+                <li><a href="benefits.html">ความน่าสนใจ</a></li>
+                <li><a href="student.html">เกี่ยวกับเว็บไซต์</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <section class="hero">
+        <div class="hero-content">
+            <h1 class="hero-title neon-text floating">ระบบสุริยะ</h1>
+            <p class="hero-subtitle typewriter-text">Solar System</p>
+            <p class="hero-description">สำรวจความมหัศจรรย์ของระบบสุริยะและดาวเคราะห์ทั้ง 8 ดวง ที่ล้อมรอบดวงอาทิตย์ของเรา</p>
+            <div class="hero-buttons">
+                <a href="about.html" class="btn btn-primary pulse-btn">เรียนรู้เพิ่มเติม</a>
+                <a href="types.html" class="btn btn-secondary pulse-btn">สำรวจดาวเคราะห์</a>
+            </div>
+        </div>
+        <div class="hero-image">
+            <div class="hover-zoom glow-border">
+                <img src="https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=600&h=600&fit=crop" alt="Earth from Space" class="hero-img">
+            </div>
+            <p class="image-citation">Photo by <a href="https://unsplash.com/@nasa" target="_blank">NASA</a> on Unsplash</p>
+        </div>
+    </section>
+
+    <section class="features">
+        <div class="container">
+            <h2 class="section-title rainbow-text">ทำไมต้องสำรวจอวกาศ?</h2>
+            <div class="features-grid">
+                <div class="feature-card glow-border">
+                    <div class="feature-icon floating">🔭</div>
+                    <h3>การค้นพบใหม่</h3>
+                    <p>ค้นพบความลับของจักรวาลและดาวเคราะห์ที่ยังไม่เคยถูกสำรวจ</p>
+                </div>
+                <div class="feature-card glow-border">
+                    <div class="feature-icon floating">🌍</div>
+                    <h3>ความเข้าใจโลก</h3>
+                    <p>เรียนรู้เกี่ยวกับโลกของเราและที่มาของชีวิต</p>
+                </div>
+                <div class="feature-card glow-border">
+                    <div class="feature-icon floating">✨</div>
+                    <h3>ความงาม</h3>
+                    <p>ชื่นชมความงามของดวงดาวและกาแล็กซีที่น่าทึ่ง</p>
+                </div>
+                <div class="feature-card glow-border">
+                    <div class="feature-icon floating">🚀</div>
+                    <h3>เทคโนโลยี</h3>
+                    <p>พัฒนาเทคโนโลยีที่ทำให้การสำรวจอวกาศเป็นไปได้</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="preview">
+        <div class="container">
+            <h2 class="section-title neon-text">สำรวจระบบสุริยะ</h2>
+            <div class="preview-grid">
+                <div class="preview-card glow-border">
+                    <div class="hover-zoom">
+                        <img src="milky-way-2.avif" alt="Solar System">
+                    </div>
+                    <h3 class="rainbow-text">ประวัติและที่มา</h3>
+                    <p>เรียนรู้เกี่ยวกับประวัติของระบบสุริยะและการก่อตัว</p>
+                    <a href="about.html" class="btn-link">อ่านเพิ่มเติม →</a>
+                    <p class="image-citation">Photo by <a href="https://unsplash.com/@nasa" target="_blank">NASA</a> on Unsplash</p>
+                </div>
+                <div class="preview-card glow-border">
+                    <div class="hover-zoom">
+                        <img src="p0krqqpp.png" alt="Planets">
+                    </div>
+                    <h3 class="rainbow-text">ดาวเคราะห์ทั้ง 8 ดวง</h3>
+                    <p>สำรวจดาวเคราะห์แต่ละดวงและคุณสมบัติที่น่าสนใจ</p>
+                    <a href="types.html" class="btn-link">สำรวจ →</a>
+                    <p class="image-citation">Photo by <a href="https://unsplash.com/@nasa" target="_blank">NASA</a> on Unsplash</p>
+                </div>
+                <div class="preview-card glow-border">
+                    <div class="hover-zoom">
+                        <img src="https://images.unsplash.com/photo-1446776811953-b23d57bd21aa?w=400&h=300&fit=crop" alt="Space Exploration">
+                    </div>
+                    <h3 class="rainbow-text">ข้อมูลที่น่าสนใจ</h3>
+                    <p>ค้นพบข้อมูลและความรู้เกี่ยวกับอวกาศ</p>
+                    <a href="recipes.html" class="btn-link">เริ่มสำรวจ →</a>
+                    <p class="image-citation">Photo by <a href="https://unsplash.com/@nasa" target="_blank">NASA</a> on Unsplash</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pulsating Orb Effect -->
+    <div class="pulsating-orb" style="position: fixed; bottom: 20px; right: 20px; z-index: 999;"></div>
+
+    <!-- Rotating Rings -->
+    <div class="rotating-ring" style="position: fixed; top: 50%; left: 10%; z-index: -1;">
+        <div class="ring"></div>
+        <div class="ring" style="width: 120px; height: 120px;"></div>
+        <div class="ring" style="width: 140px; height: 140px;"></div>
+    </div>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4 class="neon-text">ระบบสุริยะ</h4>
+                    <p>เฉลิมฉลองความมหัศจรรย์ของระบบสุริยะและดาวเคราะห์ทั้ง 8 ดวง</p>
+                </div>
+                <div class="footer-section">
+                    <h4 class="neon-text">ลิงก์ด่วน</h4>
+                    <ul>
+                        <li><a href="index.html">หน้าแรก</a></li>
+                        <li><a href="about.html">เกี่ยวกับ</a></li>
+                        <li><a href="types.html">ดาวเคราะห์</a></li>
+                        <li><a href="recipes.html">ข้อมูล</a></li>
+                        <li><a href="benefits.html">ความน่าสนใจ</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4 class="neon-text">ติดต่อ</h4>
+                    <p>-</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 เว็บไซต์ระบบสุริยะ.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    
+    <script>
+        // Initialize effects for index page - using same logic as other pages
+        document.addEventListener('DOMContentLoaded', () => {
+            console.log('Index page initialized');
+            
+            // ใช้โค้ดจาก script.js หลักสำหรับ background effects
+            const starsContainer = document.getElementById('stars');
+            const particlesContainer = document.getElementById('particles');
+            
+            // สร้างดาวพื้นฐาน (ลดจำนวนลง)
+            if (starsContainer) {
+                for (let i = 0; i < 150; i++) {
+                    const star = document.createElement('div');
+                    star.classList.add('star');
+                    star.classList.add('small');
+                    star.style.left = `${Math.random() * 100}vw`;
+                    star.style.top = `${Math.random() * 100}vh`;
+                    starsContainer.appendChild(star);
+                }
+            }
+            
+            // Hero section animation แบบเดียวกับ script.js หลัก
+            const heroContent = document.querySelector('.hero-content');
+            const heroImage = document.querySelector('.hero-image');
+            
+            if (heroContent) {
+                heroContent.style.opacity = '0';
+                heroContent.style.transform = 'translateX(-30px)';
+                heroContent.style.transition = 'all 0.6s ease';
+                
+                setTimeout(() => {
+                    heroContent.style.opacity = '1';
+                    heroContent.style.transform = 'translateX(0)';
+                }, 300);
+            }
+            
+            if (heroImage) {
+                heroImage.style.opacity = '0';
+                heroImage.style.transform = 'translateX(30px)';
+                heroImage.style.transition = 'all 0.6s ease 0.2s';
+                
+                setTimeout(() => {
+                    heroImage.style.opacity = '1';
+                    heroImage.style.transform = 'translateX(0)';
+                }, 500);
+            }
+            
+            // Add scroll animations (ใช้ IntersectionObserver จาก script.js หลัก)
+            const animatedElements = document.querySelectorAll('.feature-card, .preview-card');
+            const observerOptions = {
+                threshold: 0.1,
+                rootMargin: '0px 0px -50px 0px'
+            };
+
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.style.opacity = '1';
+                        entry.target.style.transform = 'translateY(0)';
+                        observer.unobserve(entry.target);
+                    }
+                });
+            }, observerOptions);
+
+            animatedElements.forEach((el, index) => {
+                el.style.opacity = '0';
+                el.style.transform = 'translateY(20px)';
+                el.style.transition = `all 0.5s ease ${index * 0.1}s`;
+                observer.observe(el);
+            });
+            
+            // Add shooting stars occasionally
+            if (particlesContainer) {
+                setInterval(() => {
+                    if (Math.random() > 0.5) {
+                        const shootingStar = document.createElement('div');
+                        shootingStar.style.position = 'absolute';
+                        shootingStar.style.width = '2px';
+                        shootingStar.style.height = '2px';
+                        shootingStar.style.background = 'white';
+                        shootingStar.style.left = `${Math.random() * 100}vw`;
+                        shootingStar.style.top = `${Math.random() * 30}vh`;
+                        shootingStar.style.animation = 'shootingStar 1.5s linear';
+                        
+                        particlesContainer.appendChild(shootingStar);
+                        
+                        setTimeout(() => {
+                            shootingStar.remove();
+                        }, 1500);
+                    }
+                }, 3000);
+            }
+            
+            // Add style for shooting star animation
+            const style = document.createElement('style');
+            style.textContent = `
+                @keyframes shootingStar {
+                    0% {
+                        transform: translateX(0) translateY(0);
+                        opacity: 1;
+                    }
+                    100% {
+                        transform: translateX(100vw) translateY(100vh);
+                        opacity: 0;
+                    }
+                }
+            `;
+            document.head.appendChild(style);
+        });
+    </script>
+    <!-- เพิ่มเอฟเฟคพิเศษในทุกหน้า -->
+<style>
+    /* เพิ่มในส่วนท้ายของไฟล์ HTML แต่ละหน้า */
+    
+    /* Enhanced Stars Background */
+    .stars-background {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        pointer-events: none;
+        z-index: -1;
+    }
+    
+    /* Shooting Stars */
+    .shooting-star {
+        position: absolute;
+        width: 2px;
+        height: 2px;
+        background: white;
+        box-shadow: 0 0 10px white;
+        border-radius: 50%;
+        animation: shoot 2s linear infinite;
+    }
+    
+    @keyframes shoot {
+        0% {
+            transform: translateX(0) translateY(0);
+            opacity: 0;
+        }
+        10% {
+            opacity: 1;
+        }
+        100% {
+            transform: translateX(100vw) translateY(100vh);
+            opacity: 0;
+        }
+    }
+    
+    /* Planet Glow Effects */
+    .planet-glow {
+        position: fixed;
+        width: 300px;
+        height: 300px;
+        border-radius: 50%;
+        background: radial-gradient(circle, rgba(108, 99, 255, 0.1), transparent 70%);
+        filter: blur(20px);
+        z-index: -2;
+        animation: planetPulse 4s ease-in-out infinite;
+    }
+    
+    @keyframes planetPulse {
+        0%, 100% { transform: scale(1); opacity: 0.1; }
+        50% { transform: scale(1.2); opacity: 0.2; }
+    }
+    
+    /* Space Nebula */
+    .space-nebula {
+        position: fixed;
+        width: 100%;
+        height: 100%;
+        background: 
+            radial-gradient(circle at 30% 30%, rgba(108, 99, 255, 0.2), transparent 50%),
+            radial-gradient(circle at 70% 70%, rgba(255, 107, 107, 0.2), transparent 50%);
+        z-index: -3;
+        pointer-events: none;
+        opacity: 0.3;
+    }
+    
+    /* Enhanced Card Shadows */
+    .card-cosmic {
+        box-shadow: 
+            0 10px 30px rgba(0, 0, 0, 0.3),
+            0 0 50px rgba(108, 99, 255, 0.1),
+            inset 0 1px 0 rgba(255, 255, 255, 0.1);
+        transition: all 0.3s ease;
+    }
+    
+    .card-cosmic:hover {
+        box-shadow: 
+            0 20px 40px rgba(0, 0, 0, 0.4),
+            0 0 80px rgba(108, 99, 255, 0.3),
+            inset 0 1px 0 rgba(255, 255, 255, 0.2);
+        transform: translateY(-5px) scale(1.02);
+    }
+    
+    /* Enhanced Text Shadows */
+    .text-space {
+        text-shadow: 
+            0 0 10px currentColor,
+            0 0 20px currentColor,
+            0 0 30px currentColor,
+            0 0 40px rgba(108, 99, 255, 0.5);
+    }
+    
+    /* Gradient Borders */
+    .gradient-border {
+        position: relative;
+        border-radius: 15px;
+        overflow: hidden;
+    }
+    
+    .gradient-border::before {
+        content: '';
+        position: absolute;
+        top: -2px;
+        left: -2px;
+        right: -2px;
+        bottom: -2px;
+        background: linear-gradient(45deg, #6C63FF, #4A90E2, #FFD700, #FF6B6B);
+        z-index: -1;
+        border-radius: 17px;
+        animation: borderRotate 3s linear infinite;
+    }
+    
+    @keyframes borderRotate {
+        0% { filter: hue-rotate(0deg); }
+        100% { filter: hue-rotate(360deg); }
+    }
+    
+    /* Enhanced Buttons */
+    .btn-space {
+        background: linear-gradient(45deg, #6C63FF, #4A90E2);
+        position: relative;
+        overflow: hidden;
+    }
+    
+    .btn-space::after {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: -100%;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+        transition: left 0.5s;
+    }
+    
+    .btn-space:hover::after {
+        left: 100%;
+    }
+    
+    /* Loading Animation */
+    .loading-space {
+        display: inline-block;
+        width: 20px;
+        height: 20px;
+        border: 3px solid rgba(108, 99, 255, 0.3);
+        border-top-color: #6C63FF;
+        border-radius: 50%;
+        animation: spin 1s linear infinite;
+    }
+    
+    @keyframes spin {
+        to { transform: rotate(360deg); }
+    }
+    
+    /* Enhanced Table */
+    .table-space tr {
+        transition: all 0.3s ease;
+    }
+    
+    .table-space tr:hover {
+        background: linear-gradient(90deg, rgba(108, 99, 255, 0.1), rgba(74, 144, 226, 0.1));
+        transform: scale(1.01);
+    }
+    
+    /* Enhanced Images */
+    .img-space {
+        transition: all 0.5s ease;
+        filter: brightness(0.9) contrast(1.1);
+    }
+    
+    .img-space:hover {
+        filter: brightness(1.1) contrast(1.2);
+        transform: scale(1.05) rotate(1deg);
+    }
+    
+    /* Enhanced Navigation */
+    .nav-space {
+        background: rgba(13, 27, 42, 0.95);
+        backdrop-filter: blur(20px);
+        box-shadow: 
+            0 4px 30px rgba(0, 0, 0, 0.3),
+            0 0 20px rgba(108, 99, 255, 0.2);
+    }
+    
+    /* Enhanced Footer */
+    .footer-space {
+        background: linear-gradient(180deg, #0D1B2A, #050A14);
+        box-shadow: 0 0 50px rgba(108, 99, 255, 0.1);
+        position: relative;
+        overflow: hidden;
+    }
+    
+    .footer-space::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        height: 1px;
+        background: linear-gradient(90deg, transparent, #6C63FF, transparent);
+    }
+</style>
+
+<!-- Add to body of each HTML file -->
+<div class="space-nebula"></div>
+<div class="planet-glow" style="top: 10%; left: 10%;"></div>
+<div class="planet-glow" style="top: 60%; right: 10%; animation-delay: 2s;"></div>
+
+<script>
+    // Add shooting stars
+    setInterval(() => {
+        if (Math.random() > 0.7) {
+            const star = document.createElement('div');
+            star.className = 'shooting-star';
+            star.style.cssText = `
+                top: ${Math.random() * 100}vh;
+                left: ${Math.random() * 100}vw;
+                animation-duration: ${Math.random() * 2 + 1}s;
+            `;
+            document.querySelector('.stars-background').appendChild(star);
+            
+            setTimeout(() => star.remove(), 2000);
+        }
+    }, 3000);
+</script>
+</body>
+</html>
